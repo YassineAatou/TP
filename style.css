@@ -1,1 +1,122 @@
+/* Style général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+/* Titre */
+h2 {
+    color: #1e3a5f;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+/* Formulaire */
+form {
+    background-color: white;
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Labels */
+label {
+    display: block;
+    color: #34495e;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Inputs et select */
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd6e0;
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: #f9fbfd;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Effet au clic */
+input:focus,
+select:focus {
+    border-color: #2563eb;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.25);
+}
+
+/* Espacement des champs */
+br {
+    display: none;
+}
+
+input,
+select {
+    margin-bottom: 20px;
+}
+
+/* Boutons */
+button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Bouton Ajouter */
+button[type="submit"] {
+    background-color: #2563eb;
+    color: white;
+    margin-right: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Bouton Annuler */
+button[type="reset"] {
+    background-color: #e5e7eb;
+    color: #374151;
+}
+
+button[type="reset"]:hover {
+    background-color: #d1d5db;
+}
+
+/* Adaptation aux petits écrans */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 21px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    button {
+        padding: 11px 15px;
+    }
+}
