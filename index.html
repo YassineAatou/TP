@@ -1,1 +1,52 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire Stagiaire</title>
+</head>
+<body>
+
+    <h2>Formulaire d'inscription d'un stagiaire</h2>
+
+    <form>
+        <label>Numéro d'inscription :</label>
+        <input type="text" name="numInscription">
+        <br><br>
+
+        <label>Nom complet :</label>
+        <input type="text" name="nom">
+        <br><br>
+
+        <label>Prénom :</label>
+        <input type="text" name="prenom">
+        <br><br>
+
+        <label>Date de naissance :</label>
+        <input type="date" name="dateNaissance">
+        <br><br>
+
+        <label>Groupe :</label>
+        <select name="groupe">
+            <option value="">Choisir un groupe</option>
+            <option value="DEV101">DEV101</option>
+            <option value="DEV102">DEV102</option>
+            <option value="DEV201">DEV201</option>
+            <option value="DEV202">DEV202</option>
+        </select>
+        <br><br>
+
+        <label>Moyenne générale :</label>
+        <input type="number" name="moyenne" step="0.01">
+        <br><br>
+
+        <label>Adresse :</label>
+        <input type="text" name="adresse">
+        <br><br>
+
+        <button type="submit">Ajouter</button>
+        <button type="reset">Annuler</button>
+    </form>
+
+</body>
+</html>
